@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'evil';
+    src: url(font/Evil\ Empire.otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'splash';
+    src: url(font/splashpoint.otf);
+}
+
+
+:root{
+
+    --cor1: #E1CE7A;
+    --cor2: #FBFFB9;
+    --cor3: #FDD692;
+    --cor4: #EC7357;
+    --cor5: #754F44;
+
+    --fonte-destaque: 'evil', italic, helvetica;
+    --fonte-texto: 'splash', arial, helvetica;
+    --fonte-padrao: Arial, helvetica;
+
+}
+
+body{
+    background-color: var(--cor4);
+}
+/*   Cabeçalho / Menu Bar */
+header{
+    background-image: linear-gradient(-45deg, #E1CE7A, #FDD692, #EC7357,#754F44 );
+    height: 100px;
+    box-shadow: 0px 2px 4px black;
+    z-index: 1;
+    
+}
+
+h1{
+    font-family: var(--fonte-texto);
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2.5em;
+    text-shadow: 0px 2px 2px black;
+    color: white;
+}
+
+/*  Animation Background Header*/
+
+@keyframes gradient {
+    0%{
+        background-position: 0%, 50%;
+    }
+    
+    50%{
+        background-position: 100%, 50%;
+    }
+
+    100%{
+        background-position: 0%, 50%;
+    }
+}
