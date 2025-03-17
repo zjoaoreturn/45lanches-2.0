@@ -204,8 +204,9 @@ footer p{
     text-align: center;
     display: inline-block;
     padding-top: 10px;
-    text-indent: 50px;
     color: white;
+    width: 50%;
+    height: 50%;
 }
 
 #zap{
