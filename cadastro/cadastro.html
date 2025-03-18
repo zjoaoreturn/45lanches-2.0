@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/cadastro/cadastro.css">
+</head>
+<body>
+    
+    <div id="imagem"></div>
+
+    <h1>Cadastre-se</h1>
+
+    <p id="p1">Crie Sua Conta</p>
+
+    <!-- Email -->
+
+    <p class="text"><label for="iemail">Email :</label></p>
+    <div class="inputs"><input type="email" name="email" id="iemail" autocomplete="email" placeholder="Seu Gmail" maxlength="25" required class="inputs"></div>
+    
+    <!-- Senha -->
+
+    <p class="text"><label for="isenha">Senha :</label></p>
+    <div class="inputs"><input type="password" autocomplete="new-password" name="senha" id="isenha" placeholder="Sua Senha" minlength="8" maxlength="20" required class="inputs"></div>
+
+    <!-- Telefone -->
+
+    <p class="text"><label for="itel">Telefone :</label></p>
+    <div class="inputs"><input type="tel" name="tel" id="itel" placeholder="(xx) xxxxx-xxxx" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" class="inputs"></div>
+
+    <!-- Cadastrar -->
+    
+    <div id="enviar"><input type="submit" value="Cadastrar" id="cadastrar" id="enviar"></div>
+
+    <!-- Conta Feita -->
+
+    <div id="link"><a href="../login/login.html" id="conta">Já tem uma Conta?</a></div>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'evil';
+    src: url(../font/Evil\ Empire.otf);
+    font-weight: 100;
+    
+}
+
+@font-face {
+    font-family: 'splash';
+    src: url(../font/splashpoint.otf);
+    font-weight: 100;
+}
+
+
+:root{
+
+    --cor1: #f0c813;
+    --cor2: #eef652;
+    --cor3: #f7be5d;
+    --cor4: #f34f2a;
+    --cor5: #f34119;
+
+    --fonte-evil: 'evil', italic, helvetica;
+    --fonte-splash: 'splash', arial, helvetica;
+    --fonte-padrao: Arial, helvetica;
+
+}
+
+body{
+    background-image: linear-gradient(-45deg, #f34f2a, black);
+    background-repeat: no-repeat;
+    /*background-color: var(--cor4);*/
+    height: 697px;
+}
+
+/*  Imagem  */
+
+#imagem{
+    background-image: url(../cadastro/imagens/eiliv-aceron-pu6b4yIlQF4-unsplash.jpg);
+    height: 250px;
+    width: 410px;
+    background-size: 100% 150%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 2px 3px black;
+}
+
+/*  Cadastro  */
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+    font-family: var(--fonte-evil);
+    color: var(--cor1);
+    font-size: 2.5em;
+    font-weight: 100;
+    text-shadow: 1px 3px 4px black;
+}
+
+#p1{
+    text-align: center;
+    font-family: var(--fonte-splash);
+}
+
+.text{
+    font-family: var(--fonte-evil);
+    text-align: center;
+    padding: 15px;
+    font-size: 1.35em;
+}
+
+/*  Conf Inputs  */
+
+input{
+    background-color: var(--cor1);
+    width: 230px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.inputs{
+    text-align: center;
+}
+
+#enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*  Conf link  */ 
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#link{
+    text-align: center;
+    padding: 17px;
+    
+}
+
+
+
+
+
+

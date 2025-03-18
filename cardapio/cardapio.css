@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'evil';
+    src: url(../font/Evil\ Empire.otf);
+    font-weight: 100;
+    
+}
+
+@font-face {
+    font-family: 'splash';
+    src: url(../font/splashpoint.otf);
+    font-weight: 100;
+}
+
+
+:root{
+
+    --cor1: #f0c813;
+    --cor2: #eef652;
+    --cor3: #f7be5d;
+    --cor4: #f34f2a;
+    --cor5: #f34119;
+
+    --fonte-evil: 'evil', italic, helvetica;
+    --fonte-splash: 'splash', arial, helvetica;
+    --fonte-padrao: Arial, helvetica;
+
+}
+
+body{
+    background-color: var(--cor4);
+}
+
+/*   Cabeçalho  */
+
+header{
+    background-image: linear-gradient(-45deg, #dbc14d, #eef652, #fc4319,#fc4319 );
+    background-repeat: no-repeat;
+    background-size: 150% 150%;
+    height: 85px;
+    z-index: 1;
+    animation: gradient 8s infinite;
+}
+
+/*  Menu Bar  */
+
+nav{ 
+    font-family: var(--fonte-evil);
+    height: 35px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.734);
+    position: relative;
+    width: 100%;
+}
+
+nav a{
+    margin-left: 15px;
+    text-align: center;
+    line-height: 35px;
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+nav a:hover{
+    background-color: #E1CE7A;
+    padding: 9px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+}
+
+h1{
+    font-family: var(--fonte-splash);
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2.5em;
+    text-shadow: 0px 2px 2px black;
+    color: white;
+}
+
+#palavra{
+    color: white;
+    text-shadow: 0px 2px 2px black;
+}
+
+header p{
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+/*  Animation Background Header / Footer */
+
+@keyframes gradient {
+    0%{
+        background-position: 0%, -50%;
+    }
+    
+    50%{
+        background-position: 100%, -50%;
+    }
+
+    100%{
+        background-position: 0%, -50%;
+    }
+}
+
+/*  Cardapio / Produtos  / Valor*/
+
+h2{
+    text-align: center;
+    padding: 5px;
+    font-size: 2em;
+    font-family: var(--fonte-splash);
+    color: var(--cor1);
+    text-shadow: 0px 2px 3px rgb(0, 0, 0);
+}
+
+.produto{
+    margin-top: 10px;
+    text-indent: 12px;
+    font-size: 1.4em;
+    font-family: var(--fonte-splash);
+    text-shadow: 0px 2px 3px rgba(0, 0, 0);
+    background-image: linear-gradient(to right,#e1ce7a83, transparent );
+    background-size: 300px;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.ptapioca{
+    margin-top: 10px;
+    text-indent: 12px;
+    font-size: 1.3em;
+    font-family: var(--fonte-splash);
+    text-shadow: 0px 2px 3px rgba(0, 0, 0);
+    background-image: linear-gradient(to right,#e1ce7a83, transparent );
+    color: white;
+    background-size: 300px;
+    background-repeat: no-repeat;
+
+}
+
+.bebidas2{
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5em;
+    font-family: var(--fonte-splash);
+    color: var(--cor5);
+    text-shadow: 0px 2px 3px rgb(0, 0, 0);
+}
+
+
+.ingredientes{
+    text-indent: 30px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.474);
+}
+
+.desc{
+    text-indent: 20px;
+    text-align: justify;
+    padding: 5px;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.998);
+    color: white;
+    font-weight: 100;
+}
+
+.valor{
+    font-size: 1.0em;
+    font-family: var(--fonte-splash);
+    text-shadow: 0px 2px 3px rgb(0, 0, 0);
+    color: var(--cor3);
+}
+
+.valor2{
+    font-size: 1.0em;
+    text-shadow: 0px 2px 3px rgb(0, 0, 0);
+    font-weight: 100;
+    font-family: var(--fonte-padrao);
+}
+
+/*  Footer  */
+
+footer{
+    margin-top: 10px;
+    background-image: linear-gradient(-45deg, #dbc14d, #eef652, #fc4319,#fc4319 );
+    background-repeat: no-repeat;
+    background-size: 150% 150%;
+    animation: gradient 8s infinite;
+    height: 45px;
+    
+}
+
+footer p{
+    text-align: center;
+    display: inline-block;
+    padding-top: 10px;
+    color: white;
+    padding-left: 50px;
+}
+
+#zap{
+    color: green;
+}
+
+#inst{
+    background-image: linear-gradient(45deg, #405de6, #405de6, #bc2a8d, #fca311, white, #fede75, #6e6868);
+    background-clip: var(--cor5);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dst{
+    color: black;
+    font-family: var(--fonte-evil);
+    font-size: 1.3em;
+}
+
+#linktest{
+    padding: 5px;
+}
