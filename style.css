@@ -43,7 +43,7 @@ header{
     background-image: linear-gradient(-45deg, #dbc14d, #eef652, #fc4319,#fc4319 );
     background-repeat: no-repeat;
     background-size: 150% 150%;
-    height: 90px;
+    height: 100;
     z-index: 1;
     animation: gradient 8s infinite;
 }
@@ -56,7 +56,7 @@ nav{
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.734);
     position: relative;
-    width: 100%;
+    width: 100vh;
 }
 
 nav a{
@@ -204,8 +204,9 @@ footer p{
     text-align: center;
     display: inline-block;
     padding-top: 10px;
-    text-indent: 50px;
     color: white;
+    width: 50%;
+    height: 50%;
 }
 
 #zap{
