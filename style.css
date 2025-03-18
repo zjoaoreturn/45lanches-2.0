@@ -205,8 +205,7 @@ footer p{
     display: inline-block;
     padding-top: 10px;
     color: white;
-    width: 50%;
-    height: 50%;
+    padding-left: 50px;
 }
 
 #zap{
