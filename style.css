@@ -43,7 +43,7 @@ header{
     background-image: linear-gradient(-45deg, #dbc14d, #eef652, #fc4319,#fc4319 );
     background-repeat: no-repeat;
     background-size: 150% 150%;
-    height: 100;
+    height: 85px;
     z-index: 1;
     animation: gradient 8s infinite;
 }
@@ -56,7 +56,7 @@ nav{
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.734);
     position: relative;
-    width: 100vh;
+    width: 100%;
 }
 
 nav a{
